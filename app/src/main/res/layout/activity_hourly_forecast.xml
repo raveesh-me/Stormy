@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context="com.example.raveesh.stormy.ui.HourlyForecastActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:id="@+id/hourlyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.constraint.ConstraintLayout>

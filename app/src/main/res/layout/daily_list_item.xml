@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingEnd="32dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="32dp"
+    android:paddingStart="64dp"
+    android:paddingTop="4dp">
+    <!--tools:background="#ffaa00">-->
+
+
+    <ImageView
+        android:id="@+id/dailyCircleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/bg_temperature" />
+
+    <ImageView
+        android:id="@+id/dailyIconImageView"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/dailyCircleImageView"
+        android:layout_toRightOf="@+id/dailyCircleImageView"
+        app:srcCompat="@drawable/clear_day" />
+
+    <TextView
+        android:id="@+id/dailyNameLabel"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/dailyIconImageView"
+        android:layout_toRightOf="@+id/dailyIconImageView"
+        android:text="Wednesday" />
+
+    <TextView
+        android:id="@+id/dailyTemperatureLabel"
+        android:layout_alignBottom="@id/dailyCircleImageView"
+        android:layout_alignEnd="@id/dailyCircleImageView"
+        android:layout_alignLeft="@id/dailyCircleImageView"
+        android:layout_alignRight="@id/dailyCircleImageView"
+        android:layout_alignStart="@id/dailyCircleImageView"
+        android:layout_alignTop="@id/dailyCircleImageView"
+        android:gravity="center"
+        android:textColor="#f25019"
+        android:text="100"
+        android:layout_height="0dp"
+        android:layout_width="0dp" />
+</RelativeLayout>
